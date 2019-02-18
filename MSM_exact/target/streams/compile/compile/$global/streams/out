@@ -1,0 +1,5 @@
+[0m[[0m[33mwarn[0m] [0m[0m/Users/jan/Documents/BEST/MSM_exact/src/main/scala/pos.scala:6:8: pos has a main method with parameter type Array[String], but pos will not be a runnable program.[0m
+[0m[[0m[33mwarn[0m] [0m[0m  Reason: main method must have exact signature (Array[String])Unit[0m
+[0m[[0m[33mwarn[0m] [0m[0mobject pos {[0m
+[0m[[0m[33mwarn[0m] [0m[0m       ^[0m
+[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m

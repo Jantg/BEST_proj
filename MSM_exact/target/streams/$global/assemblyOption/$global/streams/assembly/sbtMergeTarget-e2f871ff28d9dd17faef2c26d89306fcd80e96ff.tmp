@@ -1,0 +1,4 @@
+# Let's hope this works as expected
+
+com.fasterxml.jackson.module.scala.DefaultScalaModule
+com.fasterxml.jackson.module.paranamer.ParanamerModule

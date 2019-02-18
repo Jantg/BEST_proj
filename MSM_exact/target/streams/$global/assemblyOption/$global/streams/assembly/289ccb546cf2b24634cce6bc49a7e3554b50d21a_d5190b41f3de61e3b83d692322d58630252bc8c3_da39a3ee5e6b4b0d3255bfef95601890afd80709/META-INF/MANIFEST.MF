@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Implementation-Title: snappy-java
+Implementation-Version: 1.1.7.1
+Specification-Vendor: xerial.org
+Specification-Title: snappy-java
+Implementation-Vendor-Id: org.xerial.snappy
+Specification-Version: 1.1.7.1
+Vcs-Release-Tag: 1.1.7.1
+Implementation-Vendor: xerial.org
+Main-Class: org.xerial.snappy.OSInfo
+Vcs-Release-Hash: 454bb5430639df348f543c583bd149b0e74a1474
+

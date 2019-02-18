@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Implementation-Title: ORC Core
+Implementation-Version: 1.5.2
+Archiver-Version: Plexus Archiver
+Built-By: pjayachandran
+Specification-Vendor: The Apache Software Foundation
+Specification-Title: ORC Core
+Implementation-Vendor-Id: org.apache.orc
+Implementation-Vendor: The Apache Software Foundation
+Created-By: Apache Maven 3.5.3
+Build-Jdk: 1.8.0_121
+Specification-Version: 1.5
+Implementation-URL: http://orc.apache.org/orc-core
+

@@ -1,0 +1,982 @@
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: json4s-core_2.12-3.5.3.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: parquet-column-1.10.0.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: netty-3.9.9.Final.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: parquet-common-1.10.0.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: curator-recipes-2.6.0.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: json4s-ast_2.12-3.5.3.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: htrace-core-3.0.4.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: parquet-format-2.4.0.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: json4s-scalap_2.12-3.5.3.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: paranamer-2.8.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: parquet-encoding-1.10.0.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: scala-library-2.12.8.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: parquet-hadoop-1.10.0.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: scala-xml_2.12-1.0.6.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: parquet-jackson-1.10.0.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: jersey-client-2.22.2.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: javax.ws.rs-api-2.0.1.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: jersey-common-2.22.2.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: arrow-vector-0.10.0.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: javax.annotation-api-1.2.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: arrow-format-0.10.0.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: flatbuffers-1.2.0-3f79e055.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: arrow-memory-0.10.0.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: jsr305-3.0.2.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: jersey-guava-2.22.2.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: slf4j-api-1.7.25.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: hk2-api-2.4.0-b34.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: hadoop-hdfs-2.6.5.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: hk2-utils-2.4.0-b34.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: joda-time-2.9.9.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: aopalliance-repackaged-2.4.0-b34.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: javax.inject-2.4.0-b34.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: jackson-core-2.7.9.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: jetty-util-6.1.26.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: hk2-locator-2.4.0-b34.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: javassist-3.18.1-GA.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: xercesImpl-2.9.1.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: hppc-0.7.2.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: osgi-resource-locator-1.0.1.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: xml-apis-1.3.04.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: hadoop-mapreduce-client-app-2.6.5.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: jersey-server-2.22.2.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: jersey-media-jaxb-2.22.2.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: validation-api-1.1.0.Final.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: hadoop-mapreduce-client-common-2.6.5.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: jersey-container-servlet-2.22.2.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: jersey-container-servlet-core-2.22.2.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: spark-core_2.12-2.4.0.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: stream-2.7.0.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: hadoop-yarn-common-2.6.5.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: metrics-jvm-3.1.5.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: metrics-json-3.1.5.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: metrics-graphite-3.1.5.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: avro-1.8.2.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: hadoop-yarn-api-2.6.5.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: jackson-core-asl-1.9.13.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: jackson-module-scala_2.12-2.6.7.1.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: jaxb-api-2.2.2.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: stax-api-1.0-2.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: jackson-mapper-asl-1.9.13.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: activation-1.1.1.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: jackson-jaxrs-1.9.13.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: jackson-xc-1.9.13.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: scala-reflect-2.12.8.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: snappy-java-1.1.7.1.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: jackson-module-paranamer-2.7.9.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: guice-3.0.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: commons-compress-1.8.1.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: javax.inject-1.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: aopalliance-1.0.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: breeze_2.12-0.13.2.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: ivy-2.4.0.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: xz-1.5.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: oro-2.0.8.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: avro-mapred-1.8.2-hadoop2.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: cglib-2.2.1-v20090111.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: breeze-macros_2.12-0.13.2.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: pyrolite-4.13.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: avro-ipc-1.8.2.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: hadoop-yarn-client-2.6.5.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: py4j-0.10.7.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: chill_2.12-0.9.3.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: jettison-1.1.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: core-1.1.2.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: chill-java-0.9.3.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: hadoop-mapreduce-client-core-2.6.5.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: kryo-shaded-4.0.2.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: hadoop-yarn-server-common-2.6.5.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: minlog-1.3.0.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: objenesis-2.5.1.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: spark-sql_2.12-2.4.0.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: arpack_combined_all-0.1.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: leveldbjni-all-1.8.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: xbean-asm6-shaded-4.8.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: univocity-parsers-2.7.3.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: opencsv-2.3.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: hadoop-client-2.6.5.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: spark-sketch_2.12-2.4.0.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: hadoop-mapreduce-client-shuffle-2.6.5.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: hadoop-mapreduce-client-jobclient-2.6.5.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: spark-launcher_2.12-2.4.0.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: spark-tags_2.12-2.4.0.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: unused-1.0.0.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: spark-kvstore_2.12-2.4.0.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: hadoop-common-2.6.5.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: jtransforms-2.4.0.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: hadoop-annotations-2.6.5.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: jackson-databind-2.6.7.1.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: junit-4.8.2.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: spark-catalyst_2.12-2.4.0.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: jackson-annotations-2.6.7.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: guava-11.0.2.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: scala-parser-combinators_2.12-1.1.0.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: commons-cli-1.2.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: janino-3.0.9.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: spark-network-common_2.12-2.4.0.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: commons-compiler-3.0.9.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: commons-math3-3.4.1.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: xmlenc-0.52.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: antlr4-runtime-4.7.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: commons-httpclient-3.1.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: commons-codec-1.10.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: commons-io-2.4.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: netty-all-4.1.17.Final.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: commons-net-3.1.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: orc-core-1.5.2-nohive.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: commons-lang3-3.5.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: commons-collections-3.2.2.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: orc-shims-1.5.2.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: metrics-core-3.1.5.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: aircompressor-0.10.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: log4j-1.2.17.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: commons-crypto-1.0.0.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: orc-mapreduce-1.5.2-nohive.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: commons-lang-2.6.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: spire-macros_2.12-0.13.0.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: spark-network-shuffle_2.12-2.4.0.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: commons-configuration-1.6.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: machinist_2.12-0.6.1.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: spark-unsafe_2.12-2.4.0.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: commons-digester-1.8.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: javax.servlet-api-3.1.0.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: jul-to-slf4j-1.7.16.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: commons-beanutils-1.7.0.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: jcl-over-slf4j-1.7.16.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: compress-lzf-1.0.3.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: spire_2.12-0.13.0.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: commons-beanutils-core-1.8.0.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: shapeless_2.12-2.3.2.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: macro-compat_2.12-1.1.1.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: breeze-natives_2.12-0.13.2.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: protobuf-java-2.5.0.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: lz4-java-1.4.0.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: gson-2.2.4.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: hadoop-auth-2.6.5.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: netlib-native_ref-osx-x86_64-1.1-natives.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: netlib-native_ref-linux-armhf-1.1-natives.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: httpclient-4.2.5.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: native_ref-java-1.1.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: jniloader-1.1.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: netlib-native_system-osx-x86_64-1.1-natives.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: httpcore-4.2.4.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: zstd-jni-1.3.2-2.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: native_system-java-1.1.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: RoaringBitmap-0.5.11.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: json4s-jackson_2.12-3.5.3.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: netlib-native_system-linux-x86_64-1.1-natives.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: apacheds-kerberos-codec-2.0.0-M15.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: apacheds-i18n-2.0.0-M15.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: netlib-native_system-win-x86_64-1.1-natives.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: api-asn1-api-1.0.0-M20.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: netlib-native_system-linux-i686-1.1-natives.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: api-util-1.0.0-M20.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: netlib-native_ref-linux-x86_64-1.1-natives.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: netlib-native_system-linux-armhf-1.1-natives.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: netlib-native_system-win-i686-1.1-natives.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: curator-framework-2.6.0.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: curator-client-2.6.0.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: netlib-native_ref-linux-i686-1.1-natives.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: zookeeper-3.4.6.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: slf4j-log4j12-1.7.16.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: spark-mllib_2.12-2.4.0.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: jline-0.9.94.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: spark-streaming_2.12-2.4.0.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: spark-graphx_2.12-2.4.0.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: spark-mllib-local_2.12-2.4.0.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: netlib-native_ref-win-x86_64-1.1-natives.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: netlib-native_ref-win-i686-1.1-natives.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mCalculate mappings...[0m
+[0m[[0m[0mdebug[0m] [0m[0mChecking every *.class/*.jar file's SHA-1.[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging files...[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'license_xml-apis-1.3.04/LICENSE' with strategy 'rename'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/ASL2.0' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/DEPENDENCIES' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/DUMMY.DSA' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/DUMMY.SF' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/INDEX.LIST' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/MANIFEST.MF' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/com.carrotsearch/hppc/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/com.carrotsearch/hppc/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/com.clearspring.analytics/stream/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/com.clearspring.analytics/stream/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/com.esotericsoftware/kryo-shaded/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/com.esotericsoftware/kryo-shaded/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/com.esotericsoftware/minlog/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/com.esotericsoftware/minlog/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/com.esotericsoftware/reflectasm/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/com.esotericsoftware/reflectasm/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/com.fasterxml.jackson.core/jackson-annotations/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/com.fasterxml.jackson.core/jackson-annotations/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/com.fasterxml.jackson.core/jackson-core/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/com.fasterxml.jackson.core/jackson-core/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/com.fasterxml.jackson.core/jackson-databind/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/com.fasterxml.jackson.core/jackson-databind/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/com.fasterxml.jackson.module/jackson-module-paranamer/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/com.fasterxml.jackson.module/jackson-module-paranamer/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/com.github.fommil.netlib/core/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/com.github.fommil.netlib/core/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/com.github.fommil.netlib/native_ref-java/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/com.github.fommil.netlib/native_ref-java/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/com.github.fommil.netlib/native_system-java/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/com.github.fommil.netlib/native_system-java/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/com.github.fommil.netlib/netlib-native_ref-linux-armhf/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/com.github.fommil.netlib/netlib-native_ref-linux-armhf/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/com.github.fommil.netlib/netlib-native_ref-linux-i686/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/com.github.fommil.netlib/netlib-native_ref-linux-i686/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/com.github.fommil.netlib/netlib-native_ref-linux-x86_64/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/com.github.fommil.netlib/netlib-native_ref-linux-x86_64/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/com.github.fommil.netlib/netlib-native_ref-osx-x86_64/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/com.github.fommil.netlib/netlib-native_ref-osx-x86_64/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/com.github.fommil.netlib/netlib-native_ref-win-i686/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/com.github.fommil.netlib/netlib-native_ref-win-i686/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/com.github.fommil.netlib/netlib-native_ref-win-x86_64/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/com.github.fommil.netlib/netlib-native_ref-win-x86_64/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/com.github.fommil.netlib/netlib-native_system-linux-armhf/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/com.github.fommil.netlib/netlib-native_system-linux-armhf/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/com.github.fommil.netlib/netlib-native_system-linux-i686/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/com.github.fommil.netlib/netlib-native_system-linux-i686/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/com.github.fommil.netlib/netlib-native_system-linux-x86_64/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/com.github.fommil.netlib/netlib-native_system-linux-x86_64/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/com.github.fommil.netlib/netlib-native_system-osx-x86_64/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/com.github.fommil.netlib/netlib-native_system-osx-x86_64/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/com.github.fommil.netlib/netlib-native_system-win-i686/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/com.github.fommil.netlib/netlib-native_system-win-i686/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/com.github.fommil.netlib/netlib-native_system-win-x86_64/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/com.github.fommil.netlib/netlib-native_system-win-x86_64/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/com.github.fommil/jniloader/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/com.github.fommil/jniloader/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/com.github.rwl/jtransforms/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/com.github.rwl/jtransforms/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/com.google.code.findbugs/jsr305/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/com.google.code.findbugs/jsr305/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/com.google.guava/guava/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/com.google.guava/guava/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/com.google.protobuf/protobuf-java/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/com.google.protobuf/protobuf-java/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/com.ning/compress-lzf/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/com.ning/compress-lzf/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/com.thoughtworks.paranamer/paranamer/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/com.thoughtworks.paranamer/paranamer/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/com.univocity/univocity-parsers/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/com.univocity/univocity-parsers/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/com.vlkan/flatbuffers/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/com.vlkan/flatbuffers/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/commons-cli/commons-cli/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/commons-cli/commons-cli/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/commons-codec/commons-codec/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/commons-codec/commons-codec/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/commons-collections/commons-collections/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/commons-collections/commons-collections/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/commons-configuration/commons-configuration/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/commons-configuration/commons-configuration/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/commons-io/commons-io/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/commons-io/commons-io/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/commons-lang/commons-lang/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/commons-lang/commons-lang/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/commons-net/commons-net/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/commons-net/commons-net/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/io.airlift/aircompressor/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/io.airlift/aircompressor/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/io.dropwizard.metrics/metrics-core/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/io.dropwizard.metrics/metrics-core/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/io.dropwizard.metrics/metrics-graphite/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/io.dropwizard.metrics/metrics-graphite/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/io.dropwizard.metrics/metrics-json/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/io.dropwizard.metrics/metrics-json/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/io.dropwizard.metrics/metrics-jvm/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/io.dropwizard.metrics/metrics-jvm/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/io.netty/netty-all/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/io.netty/netty-all/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/io.netty/netty/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/io.netty/netty/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/javax.annotation/javax.annotation-api/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/javax.annotation/javax.annotation-api/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/javax.servlet/javax.servlet-api/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/javax.servlet/javax.servlet-api/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/javax.validation/validation-api/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/javax.validation/validation-api/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/javax.ws.rs/javax.ws.rs-api/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/javax.ws.rs/javax.ws.rs-api/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/jline/jline/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/jline/jline/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/joda-time/joda-time/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/joda-time/joda-time/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/log4j/log4j/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/log4j/log4j/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/net.razorvine/pyrolite/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/net.razorvine/pyrolite/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/net.sf.opencsv/opencsv/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/net.sf.opencsv/opencsv/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/net.sf.py4j/py4j/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/net.sf.py4j/py4j/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.antlr/antlr4-runtime/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.antlr/antlr4-runtime/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.apache.arrow/arrow-format/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.apache.arrow/arrow-format/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.apache.arrow/arrow-memory/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.apache.arrow/arrow-memory/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.apache.arrow/arrow-vector/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.apache.arrow/arrow-vector/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.apache.avro/avro-guava-dependencies/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.apache.avro/avro-guava-dependencies/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.apache.avro/avro-ipc/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.apache.avro/avro-ipc/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.apache.avro/avro-mapred/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.apache.avro/avro-mapred/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.apache.avro/avro/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.apache.avro/avro/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.apache.commons/commons-compress/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.apache.commons/commons-compress/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.apache.commons/commons-crypto/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.apache.commons/commons-crypto/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.apache.commons/commons-lang3/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.apache.commons/commons-lang3/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.apache.commons/commons-math3/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.apache.commons/commons-math3/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.apache.curator/curator-client/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.apache.curator/curator-client/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.apache.curator/curator-framework/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.apache.curator/curator-framework/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.apache.curator/curator-recipes/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.apache.curator/curator-recipes/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.apache.directory.api/api-util/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.apache.directory.api/api-util/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.apache.hadoop/hadoop-annotations/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.apache.hadoop/hadoop-annotations/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.apache.hadoop/hadoop-auth/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.apache.hadoop/hadoop-auth/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.apache.hadoop/hadoop-client/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.apache.hadoop/hadoop-client/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.apache.hadoop/hadoop-common/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.apache.hadoop/hadoop-common/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.apache.hadoop/hadoop-hdfs/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.apache.hadoop/hadoop-hdfs/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.apache.hadoop/hadoop-mapreduce-client-app/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.apache.hadoop/hadoop-mapreduce-client-app/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.apache.hadoop/hadoop-mapreduce-client-common/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.apache.hadoop/hadoop-mapreduce-client-common/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.apache.hadoop/hadoop-mapreduce-client-core/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.apache.hadoop/hadoop-mapreduce-client-core/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.apache.hadoop/hadoop-mapreduce-client-jobclient/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.apache.hadoop/hadoop-mapreduce-client-jobclient/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.apache.hadoop/hadoop-mapreduce-client-shuffle/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.apache.hadoop/hadoop-mapreduce-client-shuffle/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.apache.hadoop/hadoop-yarn-api/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.apache.hadoop/hadoop-yarn-api/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.apache.hadoop/hadoop-yarn-client/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.apache.hadoop/hadoop-yarn-client/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.apache.hadoop/hadoop-yarn-common/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.apache.hadoop/hadoop-yarn-common/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.apache.hadoop/hadoop-yarn-server-common/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.apache.hadoop/hadoop-yarn-server-common/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.apache.hive/hive-storage-api/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.apache.hive/hive-storage-api/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.apache.httpcomponents/httpclient/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.apache.httpcomponents/httpclient/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.apache.httpcomponents/httpcore/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.apache.httpcomponents/httpcore/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.apache.orc/orc-core/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.apache.orc/orc-core/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.apache.orc/orc-mapreduce/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.apache.orc/orc-mapreduce/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.apache.orc/orc-shims/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.apache.orc/orc-shims/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.apache.parquet/parquet-column/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.apache.parquet/parquet-column/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.apache.parquet/parquet-common/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.apache.parquet/parquet-common/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.apache.parquet/parquet-encoding/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.apache.parquet/parquet-encoding/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.apache.parquet/parquet-format/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.apache.parquet/parquet-format/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.apache.parquet/parquet-hadoop/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.apache.parquet/parquet-hadoop/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.apache.parquet/parquet-jackson/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.apache.parquet/parquet-jackson/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.apache.spark/spark-catalyst_2.12/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.apache.spark/spark-catalyst_2.12/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.apache.spark/spark-core_2.12/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.apache.spark/spark-core_2.12/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.apache.spark/spark-graphx_2.12/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.apache.spark/spark-graphx_2.12/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.apache.spark/spark-kvstore_2.12/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.apache.spark/spark-kvstore_2.12/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.apache.spark/spark-launcher_2.12/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.apache.spark/spark-launcher_2.12/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.apache.spark/spark-mllib-local_2.12/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.apache.spark/spark-mllib-local_2.12/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.apache.spark/spark-mllib_2.12/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.apache.spark/spark-mllib_2.12/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.apache.spark/spark-network-common_2.12/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.apache.spark/spark-network-common_2.12/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.apache.spark/spark-network-shuffle_2.12/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.apache.spark/spark-network-shuffle_2.12/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.apache.spark/spark-sketch_2.12/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.apache.spark/spark-sketch_2.12/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.apache.spark/spark-sql_2.12/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.apache.spark/spark-sql_2.12/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.apache.spark/spark-streaming_2.12/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.apache.spark/spark-streaming_2.12/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.apache.spark/spark-tags_2.12/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.apache.spark/spark-tags_2.12/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.apache.spark/spark-unsafe_2.12/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.apache.spark/spark-unsafe_2.12/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.apache.xbean/xbean-asm-util/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.apache.xbean/xbean-asm-util/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.apache.xbean/xbean-asm6-shaded/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.apache.xbean/xbean-asm6-shaded/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.codehaus.janino/commons-compiler/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.codehaus.janino/commons-compiler/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.codehaus.janino/janino/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.codehaus.janino/janino/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.codehaus.jettison/jettison/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.codehaus.jettison/jettison/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.eclipse.jetty/jetty-client/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.eclipse.jetty/jetty-client/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.eclipse.jetty/jetty-continuation/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.eclipse.jetty/jetty-continuation/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.eclipse.jetty/jetty-http/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.eclipse.jetty/jetty-http/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.eclipse.jetty/jetty-io/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.eclipse.jetty/jetty-io/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.eclipse.jetty/jetty-plus/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.eclipse.jetty/jetty-plus/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.eclipse.jetty/jetty-proxy/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.eclipse.jetty/jetty-proxy/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.eclipse.jetty/jetty-security/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.eclipse.jetty/jetty-security/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.eclipse.jetty/jetty-server/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.eclipse.jetty/jetty-server/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.eclipse.jetty/jetty-servlet/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.eclipse.jetty/jetty-servlet/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.eclipse.jetty/jetty-servlets/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.eclipse.jetty/jetty-servlets/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.eclipse.jetty/jetty-util/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.eclipse.jetty/jetty-util/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.fusesource.leveldbjni/leveldbjni-all/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.fusesource.leveldbjni/leveldbjni-all/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.glassfish.hk2.external/aopalliance-repackaged/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.glassfish.hk2.external/aopalliance-repackaged/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.glassfish.hk2.external/javax.inject/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.glassfish.hk2.external/javax.inject/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.glassfish.hk2/hk2-api/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.glassfish.hk2/hk2-api/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.glassfish.hk2/hk2-locator/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.glassfish.hk2/hk2-locator/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.glassfish.hk2/hk2-utils/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.glassfish.hk2/hk2-utils/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.glassfish.hk2/osgi-resource-locator/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.glassfish.hk2/osgi-resource-locator/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.glassfish.jersey.bundles.repackaged/jersey-guava/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.glassfish.jersey.bundles.repackaged/jersey-guava/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.glassfish.jersey.containers/jersey-container-servlet-core/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.glassfish.jersey.containers/jersey-container-servlet-core/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.glassfish.jersey.containers/jersey-container-servlet/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.glassfish.jersey.containers/jersey-container-servlet/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.glassfish.jersey.core/jersey-client/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.glassfish.jersey.core/jersey-client/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.glassfish.jersey.core/jersey-common/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.glassfish.jersey.core/jersey-common/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.glassfish.jersey.core/jersey-server/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.glassfish.jersey.core/jersey-server/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.glassfish.jersey.media/jersey-media-jaxb/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.glassfish.jersey.media/jersey-media-jaxb/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.htrace/htrace-core/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.htrace/htrace-core/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.javassist/javassist/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.javassist/javassist/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.jpmml/pmml-model/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.jpmml/pmml-model/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.jpmml/pmml-schema/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.jpmml/pmml-schema/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.jvnet/tiger-types/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.jvnet/tiger-types/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.mortbay.jetty/jetty-util/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.mortbay.jetty/jetty-util/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.roaringbitmap/RoaringBitmap/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.roaringbitmap/RoaringBitmap/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.slf4j/jcl-over-slf4j/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.slf4j/jcl-over-slf4j/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.slf4j/jul-to-slf4j/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.slf4j/jul-to-slf4j/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.slf4j/slf4j-api/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.slf4j/slf4j-api/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.slf4j/slf4j-log4j12/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.slf4j/slf4j-log4j12/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.spark-project.spark/unused/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.spark-project.spark/unused/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/services/com.fasterxml.jackson.databind.Module' with strategy 'filterDistinctLines'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/services/org.apache.hadoop.fs.FileSystem' with strategy 'filterDistinctLines'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/services/org.apache.hadoop.mapreduce.protocol.ClientProtocolProvider' with strategy 'filterDistinctLines'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/services/org.apache.hadoop.security.SecurityInfo' with strategy 'filterDistinctLines'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/services/org.apache.hadoop.security.token.TokenIdentifier' with strategy 'filterDistinctLines'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/services/org.apache.hadoop.security.token.TokenRenewer' with strategy 'filterDistinctLines'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/services/org.apache.spark.sql.sources.DataSourceRegister' with strategy 'filterDistinctLines'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/services/org.glassfish.jersey.internal.spi.ForcedAutoDiscoverable' with strategy 'filterDistinctLines'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/AbstractMessage$1.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/AbstractMessage$Builder.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/AbstractMessage.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/AbstractMessageLite$Builder$LimitedInputStream.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/AbstractMessageLite$Builder.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/AbstractMessageLite.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/AbstractParser.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/BlockingRpcChannel.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/BlockingService.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/BoundedByteString$1.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/BoundedByteString$BoundedByteIterator.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/BoundedByteString.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/ByteString$1.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/ByteString$ByteIterator.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/ByteString$CodedBuilder.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/ByteString$Output.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/ByteString.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/CodedInputStream.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/CodedOutputStream$OutOfSpaceException.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/CodedOutputStream.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/DescriptorProtos$1.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/DescriptorProtos$DescriptorProto$1.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/DescriptorProtos$DescriptorProto$Builder.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/DescriptorProtos$DescriptorProto$ExtensionRange$1.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/DescriptorProtos$DescriptorProto$ExtensionRange$Builder.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/DescriptorProtos$DescriptorProto$ExtensionRange.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/DescriptorProtos$DescriptorProto$ExtensionRangeOrBuilder.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/DescriptorProtos$DescriptorProto.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/DescriptorProtos$DescriptorProtoOrBuilder.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/DescriptorProtos$EnumDescriptorProto$1.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/DescriptorProtos$EnumDescriptorProto$Builder.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/DescriptorProtos$EnumDescriptorProto.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/DescriptorProtos$EnumDescriptorProtoOrBuilder.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/DescriptorProtos$EnumOptions$1.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/DescriptorProtos$EnumOptions$Builder.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/DescriptorProtos$EnumOptions.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/DescriptorProtos$EnumOptionsOrBuilder.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/DescriptorProtos$EnumValueDescriptorProto$1.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/DescriptorProtos$EnumValueDescriptorProto$Builder.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/DescriptorProtos$EnumValueDescriptorProto.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/DescriptorProtos$EnumValueDescriptorProtoOrBuilder.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/DescriptorProtos$EnumValueOptions$1.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/DescriptorProtos$EnumValueOptions$Builder.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/DescriptorProtos$EnumValueOptions.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/DescriptorProtos$EnumValueOptionsOrBuilder.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/DescriptorProtos$FieldDescriptorProto$1.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/DescriptorProtos$FieldDescriptorProto$Builder.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/DescriptorProtos$FieldDescriptorProto$Label$1.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/DescriptorProtos$FieldDescriptorProto$Label.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/DescriptorProtos$FieldDescriptorProto$Type$1.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/DescriptorProtos$FieldDescriptorProto$Type.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/DescriptorProtos$FieldDescriptorProto.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/DescriptorProtos$FieldDescriptorProtoOrBuilder.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/DescriptorProtos$FieldOptions$1.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/DescriptorProtos$FieldOptions$Builder.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/DescriptorProtos$FieldOptions$CType$1.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/DescriptorProtos$FieldOptions$CType.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/DescriptorProtos$FieldOptions.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/DescriptorProtos$FieldOptionsOrBuilder.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/DescriptorProtos$FileDescriptorProto$1.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/DescriptorProtos$FileDescriptorProto$Builder.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/DescriptorProtos$FileDescriptorProto.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/DescriptorProtos$FileDescriptorProtoOrBuilder.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/DescriptorProtos$FileDescriptorSet$1.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/DescriptorProtos$FileDescriptorSet$Builder.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/DescriptorProtos$FileDescriptorSet.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/DescriptorProtos$FileDescriptorSetOrBuilder.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/DescriptorProtos$FileOptions$1.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/DescriptorProtos$FileOptions$Builder.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/DescriptorProtos$FileOptions$OptimizeMode$1.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/DescriptorProtos$FileOptions$OptimizeMode.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/DescriptorProtos$FileOptions.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/DescriptorProtos$FileOptionsOrBuilder.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/DescriptorProtos$MessageOptions$1.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/DescriptorProtos$MessageOptions$Builder.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/DescriptorProtos$MessageOptions.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/DescriptorProtos$MessageOptionsOrBuilder.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/DescriptorProtos$MethodDescriptorProto$1.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/DescriptorProtos$MethodDescriptorProto$Builder.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/DescriptorProtos$MethodDescriptorProto.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/DescriptorProtos$MethodDescriptorProtoOrBuilder.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/DescriptorProtos$MethodOptions$1.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/DescriptorProtos$MethodOptions$Builder.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/DescriptorProtos$MethodOptions.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/DescriptorProtos$MethodOptionsOrBuilder.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/DescriptorProtos$ServiceDescriptorProto$1.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/DescriptorProtos$ServiceDescriptorProto$Builder.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/DescriptorProtos$ServiceDescriptorProto.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/DescriptorProtos$ServiceDescriptorProtoOrBuilder.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/DescriptorProtos$ServiceOptions$1.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/DescriptorProtos$ServiceOptions$Builder.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/DescriptorProtos$ServiceOptions.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/DescriptorProtos$ServiceOptionsOrBuilder.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/DescriptorProtos$SourceCodeInfo$1.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/DescriptorProtos$SourceCodeInfo$Builder.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/DescriptorProtos$SourceCodeInfo$Location$1.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/DescriptorProtos$SourceCodeInfo$Location$Builder.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/DescriptorProtos$SourceCodeInfo$Location.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/DescriptorProtos$SourceCodeInfo$LocationOrBuilder.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/DescriptorProtos$SourceCodeInfo.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/DescriptorProtos$SourceCodeInfoOrBuilder.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/DescriptorProtos$UninterpretedOption$1.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/DescriptorProtos$UninterpretedOption$Builder.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/DescriptorProtos$UninterpretedOption$NamePart$1.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/DescriptorProtos$UninterpretedOption$NamePart$Builder.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/DescriptorProtos$UninterpretedOption$NamePart.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/DescriptorProtos$UninterpretedOption$NamePartOrBuilder.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/DescriptorProtos$UninterpretedOption.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/DescriptorProtos$UninterpretedOptionOrBuilder.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/DescriptorProtos.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/Descriptors$1.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/Descriptors$Descriptor.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/Descriptors$DescriptorPool$DescriptorIntPair.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/Descriptors$DescriptorPool$PackageDescriptor.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/Descriptors$DescriptorPool$SearchFilter.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/Descriptors$DescriptorPool.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/Descriptors$DescriptorValidationException.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/Descriptors$EnumDescriptor.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/Descriptors$EnumValueDescriptor.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/Descriptors$FieldDescriptor$JavaType.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/Descriptors$FieldDescriptor$Type.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/Descriptors$FieldDescriptor.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/Descriptors$FileDescriptor$InternalDescriptorAssigner.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/Descriptors$FileDescriptor.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/Descriptors$GenericDescriptor.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/Descriptors$MethodDescriptor.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/Descriptors$ServiceDescriptor.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/Descriptors.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/DynamicMessage$1.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/DynamicMessage$Builder.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/DynamicMessage.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/ExtensionRegistry$1.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/ExtensionRegistry$DescriptorIntPair.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/ExtensionRegistry$ExtensionInfo.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/ExtensionRegistry.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/ExtensionRegistryLite$ObjectIntPair.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/ExtensionRegistryLite.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/FieldSet$1.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/FieldSet$FieldDescriptorLite.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/FieldSet.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/GeneratedMessage$1.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/GeneratedMessage$2.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/GeneratedMessage$Builder$BuilderParentImpl.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/GeneratedMessage$Builder.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/GeneratedMessage$BuilderParent.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/GeneratedMessage$ExtendableBuilder.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/GeneratedMessage$ExtendableMessage$ExtensionWriter.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/GeneratedMessage$ExtendableMessage.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/GeneratedMessage$ExtendableMessageOrBuilder.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/GeneratedMessage$ExtensionDescriptorRetriever.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/GeneratedMessage$FieldAccessorTable$FieldAccessor.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/GeneratedMessage$FieldAccessorTable$RepeatedEnumFieldAccessor.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/GeneratedMessage$FieldAccessorTable$RepeatedFieldAccessor.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/GeneratedMessage$FieldAccessorTable$RepeatedMessageFieldAccessor.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/GeneratedMessage$FieldAccessorTable$SingularEnumFieldAccessor.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/GeneratedMessage$FieldAccessorTable$SingularFieldAccessor.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/GeneratedMessage$FieldAccessorTable$SingularMessageFieldAccessor.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/GeneratedMessage$FieldAccessorTable.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/GeneratedMessage$GeneratedExtension$1.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/GeneratedMessage$GeneratedExtension.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/GeneratedMessage.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/GeneratedMessageLite$1.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/GeneratedMessageLite$Builder.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/GeneratedMessageLite$ExtendableBuilder.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/GeneratedMessageLite$ExtendableMessage$ExtensionWriter.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/GeneratedMessageLite$ExtendableMessage.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/GeneratedMessageLite$ExtendableMessageOrBuilder.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/GeneratedMessageLite$ExtensionDescriptor.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/GeneratedMessageLite$GeneratedExtension.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/GeneratedMessageLite$SerializedForm.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/GeneratedMessageLite.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/Internal$EnumLite.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/Internal$EnumLiteMap.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/Internal.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/InvalidProtocolBufferException.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/LazyField$1.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/LazyField$LazyEntry.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/LazyField$LazyIterator.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/LazyField.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/LazyStringArrayList.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/LazyStringList.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/LiteralByteString$1.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/LiteralByteString$LiteralByteIterator.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/LiteralByteString.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/Message$Builder.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/Message.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/MessageLite$Builder.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/MessageLite.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/MessageLiteOrBuilder.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/MessageOrBuilder.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/Parser.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/ProtocolMessageEnum.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/RepeatedFieldBuilder$BuilderExternalList.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/RepeatedFieldBuilder$MessageExternalList.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/RepeatedFieldBuilder$MessageOrBuilderExternalList.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/RepeatedFieldBuilder.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/RopeByteString$1.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/RopeByteString$Balancer.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/RopeByteString$PieceIterator.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/RopeByteString$RopeByteIterator.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/RopeByteString$RopeInputStream.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/RopeByteString.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/RpcCallback.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/RpcChannel.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/RpcController.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/RpcUtil$1.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/RpcUtil$2.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/RpcUtil$AlreadyCalledException.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/RpcUtil.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/Service.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/ServiceException.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/SingleFieldBuilder.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/SmallSortedMap$1.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/SmallSortedMap$EmptySet$1.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/SmallSortedMap$EmptySet$2.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/SmallSortedMap$EmptySet.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/SmallSortedMap$Entry.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/SmallSortedMap$EntryIterator.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/SmallSortedMap$EntrySet.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/SmallSortedMap.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/TextFormat$1.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/TextFormat$InvalidEscapeSequenceException.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/TextFormat$ParseException.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/TextFormat$Printer.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/TextFormat$TextGenerator.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/TextFormat$Tokenizer.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/TextFormat.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/UninitializedMessageException.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/UnknownFieldSet$1.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/UnknownFieldSet$Builder.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/UnknownFieldSet$Field$Builder.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/UnknownFieldSet$Field.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/UnknownFieldSet$Parser.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/UnknownFieldSet.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/UnmodifiableLazyStringList$1.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/UnmodifiableLazyStringList$2.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/UnmodifiableLazyStringList.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/Utf8.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/WireFormat$1.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/WireFormat$FieldType$1.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/WireFormat$FieldType$2.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/WireFormat$FieldType$3.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/WireFormat$FieldType$4.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/WireFormat$FieldType.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/WireFormat$JavaType.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'com/google/protobuf25/WireFormat.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'git.properties' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'javax/inject/Inject.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'javax/inject/Named.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'javax/inject/Provider.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'javax/inject/Qualifier.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'javax/inject/Scope.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'javax/inject/Singleton.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/aopalliance/aop/Advice.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/aopalliance/aop/AspectException.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/aopalliance/intercept/ConstructorInterceptor.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/aopalliance/intercept/ConstructorInvocation.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/aopalliance/intercept/Interceptor.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/aopalliance/intercept/Invocation.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/aopalliance/intercept/Joinpoint.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/aopalliance/intercept/MethodInterceptor.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/aopalliance/intercept/MethodInvocation.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/commons/beanutils/BasicDynaBean.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/commons/beanutils/BasicDynaClass.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/commons/beanutils/BeanAccessLanguageException.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/commons/beanutils/BeanUtils.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/commons/beanutils/BeanUtilsBean$1.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/commons/beanutils/BeanUtilsBean.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/commons/beanutils/ConstructorUtils.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/commons/beanutils/ContextClassLoaderLocal.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/commons/beanutils/ConversionException.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/commons/beanutils/ConvertUtils.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/commons/beanutils/ConvertUtilsBean.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/commons/beanutils/Converter.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/commons/beanutils/ConvertingWrapDynaBean.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/commons/beanutils/DynaBean.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/commons/beanutils/DynaClass.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/commons/beanutils/DynaProperty.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/commons/beanutils/JDBCDynaClass.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/commons/beanutils/LazyDynaBean.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/commons/beanutils/LazyDynaClass.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/commons/beanutils/LazyDynaMap.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/commons/beanutils/MappedPropertyDescriptor.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/commons/beanutils/MethodUtils$MethodDescriptor.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/commons/beanutils/MethodUtils.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/commons/beanutils/MutableDynaClass.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/commons/beanutils/NestedNullException.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/commons/beanutils/PropertyUtils.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/commons/beanutils/PropertyUtilsBean.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/commons/beanutils/ResultSetDynaClass.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/commons/beanutils/ResultSetIterator.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/commons/beanutils/RowSetDynaClass.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/commons/beanutils/WrapDynaBean.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/commons/beanutils/WrapDynaClass.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/commons/beanutils/converters/AbstractArrayConverter.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/commons/beanutils/converters/BigDecimalConverter.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/commons/beanutils/converters/BigIntegerConverter.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/commons/beanutils/converters/BooleanArrayConverter.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/commons/beanutils/converters/BooleanConverter.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/commons/beanutils/converters/ByteArrayConverter.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/commons/beanutils/converters/ByteConverter.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/commons/beanutils/converters/CharacterArrayConverter.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/commons/beanutils/converters/CharacterConverter.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/commons/beanutils/converters/ClassConverter.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/commons/beanutils/converters/DoubleArrayConverter.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/commons/beanutils/converters/DoubleConverter.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/commons/beanutils/converters/FileConverter.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/commons/beanutils/converters/FloatArrayConverter.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/commons/beanutils/converters/FloatConverter.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/commons/beanutils/converters/IntegerArrayConverter.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/commons/beanutils/converters/IntegerConverter.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/commons/beanutils/converters/LongArrayConverter.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/commons/beanutils/converters/LongConverter.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/commons/beanutils/converters/ShortArrayConverter.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/commons/beanutils/converters/ShortConverter.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/commons/beanutils/converters/SqlDateConverter.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/commons/beanutils/converters/SqlTimeConverter.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/commons/beanutils/converters/SqlTimestampConverter.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/commons/beanutils/converters/StringArrayConverter.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/commons/beanutils/converters/StringConverter.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/commons/beanutils/converters/URLConverter.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/commons/beanutils/locale/BaseLocaleConverter.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/commons/beanutils/locale/LocaleBeanUtils$Descriptor.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/commons/beanutils/locale/LocaleBeanUtils.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/commons/beanutils/locale/LocaleBeanUtilsBean$1.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/commons/beanutils/locale/LocaleBeanUtilsBean$Descriptor.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/commons/beanutils/locale/LocaleBeanUtilsBean.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/commons/beanutils/locale/LocaleConvertUtils.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/commons/beanutils/locale/LocaleConvertUtilsBean.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/commons/beanutils/locale/LocaleConverter.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/commons/beanutils/locale/converters/BigDecimalLocaleConverter.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/commons/beanutils/locale/converters/BigIntegerLocaleConverter.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/commons/beanutils/locale/converters/ByteLocaleConverter.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/commons/beanutils/locale/converters/DateLocaleConverter.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/commons/beanutils/locale/converters/DecimalLocaleConverter.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/commons/beanutils/locale/converters/DoubleLocaleConverter.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/commons/beanutils/locale/converters/FloatLocaleConverter.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/commons/beanutils/locale/converters/IntegerLocaleConverter.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/commons/beanutils/locale/converters/LongLocaleConverter.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/commons/beanutils/locale/converters/ShortLocaleConverter.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/commons/beanutils/locale/converters/SqlDateLocaleConverter.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/commons/beanutils/locale/converters/SqlTimeLocaleConverter.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/commons/beanutils/locale/converters/SqlTimestampLocaleConverter.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/commons/beanutils/locale/converters/StringLocaleConverter.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/commons/collections/ArrayStack.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/commons/collections/Buffer.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/commons/collections/BufferUnderflowException.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/commons/collections/FastHashMap$1.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/commons/collections/FastHashMap$CollectionView$CollectionViewIterator.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/commons/collections/FastHashMap$CollectionView.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/commons/collections/FastHashMap$EntrySet.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/commons/collections/FastHashMap$KeySet.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/commons/collections/FastHashMap$Values.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/commons/collections/FastHashMap.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/hadoop/yarn/client/api/impl/package-info.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/hadoop/yarn/client/api/package-info.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/hadoop/yarn/factories/package-info.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/hadoop/yarn/factory/providers/package-info.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/hadoop/yarn/util/package-info.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/orc/storage/common/DiskRangeInfo.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/orc/storage/common/NoDynamicValuesException.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/orc/storage/common/Pool$PoolObjectHelper.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/orc/storage/common/Pool.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/orc/storage/common/ValidCompactorWriteIdList.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/orc/storage/common/ValidReadTxnList.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/orc/storage/common/ValidReaderWriteIdList.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/orc/storage/common/ValidTxnList$RangeResponse.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/orc/storage/common/ValidTxnList.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/orc/storage/common/ValidTxnWriteIdList.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/orc/storage/common/ValidWriteIdList$RangeResponse.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/orc/storage/common/ValidWriteIdList.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/orc/storage/common/io/Allocator$AllocatorOutOfMemoryException.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/orc/storage/common/io/Allocator$BufferObjectFactory.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/orc/storage/common/io/Allocator.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/orc/storage/common/io/DataCache$BooleanRef.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/orc/storage/common/io/DataCache$DiskRangeListFactory.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/orc/storage/common/io/DataCache.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/orc/storage/common/io/DiskRange.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/orc/storage/common/io/DiskRangeList$CreateHelper.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/orc/storage/common/io/DiskRangeList$MutateHelper.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/orc/storage/common/io/DiskRangeList.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/orc/storage/common/io/FileMetadataCache.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/orc/storage/common/io/encoded/EncodedColumnBatch$ColumnStreamData.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/orc/storage/common/io/encoded/EncodedColumnBatch.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/orc/storage/common/io/encoded/MemoryBuffer.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/orc/storage/common/io/encoded/MemoryBufferOrBuffers.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/orc/storage/common/type/DataTypePhysicalVariation.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/orc/storage/common/type/FastHiveDecimal$1.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/orc/storage/common/type/FastHiveDecimal$FastCheckPrecisionScaleStatus.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/orc/storage/common/type/FastHiveDecimal.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/orc/storage/common/type/FastHiveDecimalImpl$1.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/orc/storage/common/type/FastHiveDecimalImpl.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/orc/storage/common/type/HiveDecimal$1.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/orc/storage/common/type/HiveDecimal.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/orc/storage/common/type/HiveDecimalV1.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/orc/storage/common/type/HiveDecimalVersionV1.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/orc/storage/common/type/HiveDecimalVersionV2.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/orc/storage/common/type/HiveIntervalDayTime$1.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/orc/storage/common/type/HiveIntervalDayTime.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/orc/storage/common/type/RandomTypeUtil$1.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/orc/storage/common/type/RandomTypeUtil.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/orc/storage/common/util/BloomFilter$BitSet.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/orc/storage/common/util/BloomFilter.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/orc/storage/common/util/BloomKFilter$BitSet.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/orc/storage/common/util/BloomKFilter.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/orc/storage/common/util/IntervalDayTimeUtils$1.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/orc/storage/common/util/IntervalDayTimeUtils.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/orc/storage/common/util/Murmur3$IncrementalHash32.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/orc/storage/common/util/Murmur3.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/orc/storage/common/util/TxnIdUtils.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/orc/storage/ql/exec/vector/BytesColumnVector.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/orc/storage/ql/exec/vector/ColumnVector$Type.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/orc/storage/ql/exec/vector/ColumnVector.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/orc/storage/ql/exec/vector/Decimal64ColumnVector.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/orc/storage/ql/exec/vector/DecimalColumnVector.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/orc/storage/ql/exec/vector/DoubleColumnVector.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/orc/storage/ql/exec/vector/IntervalDayTimeColumnVector.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/orc/storage/ql/exec/vector/ListColumnVector.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/orc/storage/ql/exec/vector/LongColumnVector.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/orc/storage/ql/exec/vector/MapColumnVector.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/orc/storage/ql/exec/vector/MultiValuedColumnVector.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/orc/storage/ql/exec/vector/StructColumnVector.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/orc/storage/ql/exec/vector/TimestampColumnVector.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/orc/storage/ql/exec/vector/UnionColumnVector.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/orc/storage/ql/exec/vector/VectorizedRowBatch.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/orc/storage/ql/exec/vector/VoidColumnVector.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/orc/storage/ql/exec/vector/expressions/StringExpr$BoyerMooreHorspool.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/orc/storage/ql/exec/vector/expressions/StringExpr$Finder.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/orc/storage/ql/exec/vector/expressions/StringExpr.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/orc/storage/ql/io/sarg/ExpressionTree$1.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/orc/storage/ql/io/sarg/ExpressionTree$Operator.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/orc/storage/ql/io/sarg/ExpressionTree.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/orc/storage/ql/io/sarg/LiteralDelegate.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/orc/storage/ql/io/sarg/PredicateLeaf$Operator.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/orc/storage/ql/io/sarg/PredicateLeaf$Type.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/orc/storage/ql/io/sarg/PredicateLeaf.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/orc/storage/ql/io/sarg/SearchArgument$1.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/orc/storage/ql/io/sarg/SearchArgument$Builder.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/orc/storage/ql/io/sarg/SearchArgument$TruthValue.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/orc/storage/ql/io/sarg/SearchArgument.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/orc/storage/ql/io/sarg/SearchArgumentFactory.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/orc/storage/ql/io/sarg/SearchArgumentImpl$1.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/orc/storage/ql/io/sarg/SearchArgumentImpl$BuilderImpl.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/orc/storage/ql/io/sarg/SearchArgumentImpl$PredicateLeafImpl.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/orc/storage/ql/io/sarg/SearchArgumentImpl.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/orc/storage/ql/util/IncrementalObjectSizeEstimator$1.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/orc/storage/ql/util/IncrementalObjectSizeEstimator$CollectionEstimator.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/orc/storage/ql/util/IncrementalObjectSizeEstimator$FieldAndType.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/orc/storage/ql/util/IncrementalObjectSizeEstimator$FieldType.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/orc/storage/ql/util/IncrementalObjectSizeEstimator$ObjectEstimator.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/orc/storage/ql/util/IncrementalObjectSizeEstimator.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/orc/storage/ql/util/JavaDataModel$1.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/orc/storage/ql/util/JavaDataModel$2.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/orc/storage/ql/util/JavaDataModel$LazyHolder.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/orc/storage/ql/util/JavaDataModel.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/orc/storage/ql/util/TimestampUtils.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/orc/storage/serde2/io/DateWritable$1.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/orc/storage/serde2/io/DateWritable$2.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/orc/storage/serde2/io/DateWritable$3.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/orc/storage/serde2/io/DateWritable.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/orc/storage/serde2/io/HiveDecimalWritable.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/orc/storage/serde2/io/HiveDecimalWritableV1.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/orc/storage/serde2/io/HiveDecimalWritableVersionV1.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/orc/storage/serde2/io/HiveDecimalWritableVersionV2.class' with strategy 'deduplicate'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/spark/unused/UnusedStubClass.class' with strategy 'deduplicate'[0m
+[0m[[0m[31merror[0m] [0m[0m112 errors were encountered during merge[0m

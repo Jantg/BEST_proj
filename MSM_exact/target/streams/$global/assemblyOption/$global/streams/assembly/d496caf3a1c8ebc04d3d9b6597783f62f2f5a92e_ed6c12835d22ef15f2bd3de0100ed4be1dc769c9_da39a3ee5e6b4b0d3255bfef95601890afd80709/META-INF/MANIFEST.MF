@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Implementation-Title: Apache Parquet Encodings
+Implementation-Version: 1.10.0
+Archiver-Version: Plexus Archiver
+Built-By: blue
+Specification-Vendor: The Apache Software Foundation
+Specification-Title: Apache Parquet Encodings
+Implementation-Vendor-Id: org.apache.parquet
+Implementation-Vendor: The Apache Software Foundation
+git-SHA-1: 031a6654009e3b82020012a18434c582bd74c73a
+Created-By: Apache Maven 3.3.9
+Build-Jdk: 1.8.0_161
+Specification-Version: 1.10.0
+
