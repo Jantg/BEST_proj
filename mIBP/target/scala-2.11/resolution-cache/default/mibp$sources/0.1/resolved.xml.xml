@@ -4,7 +4,7 @@
 		module="mibp$sources"
 		revision="0.1"
 		status="integration"
-		publication="20180925111053"
+		publication="20180925124429"
 	/>
 	<configurations>
 		<conf name="compile" visibility="public" description=""/>
