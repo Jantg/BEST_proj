@@ -1,31 +1,28 @@
 package Marginal
 
 import java.io._
-import org.apache.log4j.Logger
-import org.apache.log4j.Level
+
 import breeze.linalg.{DenseMatrix, DenseVector}
-import breeze.stats.distributions.{MultivariateGaussian, Uniform,Gaussian,Exponential,Beta,Gamma}
-import scala.util.Random.nextDouble
+import breeze.stats.distributions._
+import org.apache.log4j.{Level, Logger}
+import org.apache.spark.{SparkConf, SparkContext}
 
 import scala.io.Source
-import org.apache.spark.SparkContext
-import org.apache.spark.SparkContext._
-import org.apache.spark.SparkConf
-object pos {
+import scala.util.Random.nextDouble
+object pos_2 {
   //val spark = SparkSession.builder()
 
   def main(args: Array[String]): Unit = {
-    val delta_m = 0.7
-    val delta_g = 0.7
-    val delta_b = 0.5
+    val delta_m = 0.5
+    val delta_g = 0.5
+    val delta_b = 1.0
     val delta_s = 1.0
     val delta_l = 1.0
-    val delta_r = 0.8
-    val delta_eps = 3.0
-    val delta_prl = 1.0
+    val delta_r = 0.5
+    val delta_eps = 5.0
 
     var pr_l = 100.0
-    val pr_g1 = Array(50.0,500.0)
+    val pr_g1 = Array(500.0,5000.0)
     val pr_b = Array(1.0,2.0)
     val pr_s = Array(1.0,2.0)
     val pr_r = Array(162.0,38.0)
@@ -46,7 +43,7 @@ object pos {
     var lambdas = lambdas_p.map(v=> if(v<0.0) -v else v)
 
     var rho_p = Uniform(-0.5-delta_r,-0.5+delta_r).sample(1).toArray
-    var rho = 0.7//if(rho_p(0)< -1.0) math.abs(rho_p(0))-2.0 else if(rho_p(0) > 1.0) 2-rho_p(0) else rho_p(0)
+    var rho = -0.7//if(rho_p(0)< -1.0) math.abs(rho_p(0))-2.0 else if(rho_p(0) > 1.0) 2-rho_p(0) else rho_p(0)
 
     var eps_p = Uniform(0.0-delta_eps,0.0+delta_eps).sample(1).toArray
     var eps = eps_p(0)
@@ -73,7 +70,7 @@ object pos {
     var pr_l_p = pr_l
     var pr_l_old = pr_l
 
-      Logger.getLogger("org").setLevel(Level.OFF)
+    Logger.getLogger("org").setLevel(Level.OFF)
     Logger.getLogger("akka").setLevel(Level.OFF)
 
     val conf = new SparkConf().setAppName("pos").setMaster("local[8]")
@@ -96,60 +93,60 @@ object pos {
           eps_p = Uniform(eps-delta_eps,eps+delta_eps).sample(1).toArray
           eps = eps_p(0)
         }else {*/
-          //lambdas_p = lambdas.slice(j * kbar(1), (j + 1) * kbar(1)).map(v => math.abs(Uniform(v - delta_l, v + delta_l).sample(1)(0)))
-          //lambdas_p = lambdas.slice(j*kbar(1),(j+1)*kbar(1)).map(v=> math.exp(Gaussian(math.log(v),delta_l).sample(1)(0)))
-          //pr_l_p = math.exp(Gaussian(math.log(pr_l),delta_prl).sample(1)(0))
-          //pr_l = if(pr_l_p.isInfinite){Double.MaxValue} else{pr_l_p}
-          //prior_lamb_new = new Exponential(pr_l)
-          lambdas_p = lambdas.slice(j*kbar(1),(j+1)*kbar(1)).map(v=> math.abs(v+Gaussian(0,delta_l).sample(1)(0)))
-          lambdas = (lambdas_p.toList zip (j * kbar(1) until (j + 1) * kbar(1))).foldLeft(lambdas)((s, i) => s.updated(i._2, i._1))
-          //betas(j) = lambdas.slice(j * kbar(1), (j + 1) * kbar(1)).zipWithIndex.foldLeft(betas(j))((s, i) => s.updated(i._2, Gaussian(0.0, math.pow(i._1,2)).sample(1)(0))))
+        //lambdas_p = lambdas.slice(j * kbar(1), (j + 1) * kbar(1)).map(v => math.abs(Uniform(v - delta_l, v + delta_l).sample(1)(0)))
+        lambdas_p = lambdas.slice(j*kbar(1),(j+1)*kbar(1)).map(v=> math.exp(Gaussian(math.log(v),delta_l).sample(1)(0)))
+        //pr_l_p = math.exp(Gaussian(math.log(pr_l),delta_prl).sample(1)(0))
+        //pr_l = if(pr_l_p.isInfinite){Double.MaxValue} else{pr_l_p}
+        //prior_lamb_new = new Exponential(pr_l)
+        //lambdas_p = lambdas.slice(j*kbar(1),(j+1)*kbar(1)).map(v=> math.abs(v+Gaussian(0,delta_l).sample(1)(0)))
+        lambdas = (lambdas_p.toList zip (j * kbar(1) until (j + 1) * kbar(1))).foldLeft(lambdas)((s, i) => s.updated(i._2, i._1))
+        //betas(j) = lambdas.slice(j * kbar(1), (j + 1) * kbar(1)).zipWithIndex.foldLeft(betas(j))((s, i) => s.updated(i._2, Gaussian(0.0, math.pow(i._1,2)).sample(1)(0))))
 
-          betas(j) = lambdas.slice(j * kbar(1), (j + 1) * kbar(1)).zipWithIndex.foldLeft(betas(j))((s, i) => s.updated(i._2, i._1))
-          //betas = betas.updated(j,lambdas.slice(j*kbar(1),(j+1)*kbar(1)))
+        betas(j) = lambdas.slice(j * kbar(1), (j + 1) * kbar(1)).zipWithIndex.foldLeft(betas(j))((s, i) => s.updated(i._2, i._1))
+        //betas = betas.updated(j,lambdas.slice(j*kbar(1),(j+1)*kbar(1)))
         //}
-         pos_dist_new = forward(data,m0,gamma_1,b,sig,kbar,betas,rho,eps,sc)
+        pos_dist_new = forward(data,m0,gamma_1,b,sig,kbar,betas,rho,eps,sc)
         // prob = pos_dist.keys.map(v=>pos_dist_new(v)-pos_dist(v)).reduce((x,y) => math.max(x,y)+math.log(math.exp(x-math.max(x,y))+math.exp(y-math.max(x,y))))
         prob = pos_dist.keys.map(v=>Bigdiff(pos_dist_new(v),pos_dist(v))).reduce((x,y) => logSumExp(x,y))
-         //marginal_new = pos_dist.values.reduce((x,y) => math.max(x,y)+math.log(math.exp(x-math.max(x,y))+math.exp(y-math.max(x,y))))
-         //if (marginal_new.isNaN||marginal.isNaN){
-         //  betas = betas_old
-         //  lambdas = lambdas_old
-         //}(sigmoid(/*eps+*/logit(gammas(0)(vvv._2))-(beta(vvv._2) zip gammas(1)).map(b=>b._1*b._2).sum+
+        //marginal_new = pos_dist.values.reduce((x,y) => math.max(x,y)+math.log(math.exp(x-math.max(x,y))+math.exp(y-math.max(x,y))))
+        //if (marginal_new.isNaN||marginal.isNaN){
+        //  betas = betas_old
+        //  lambdas = lambdas_old
+        //}(sigmoid(/*eps+*/logit(gammas(0)(vvv._2))-(beta(vvv._2) zip gammas(1)).map(b=>b._1*b._2).sum+
         //        (beta(vvv._2) zip vv._4(1)).map(bb=>bb._1*bb._2).sum))
-         //Array(Array(0,0),Array(0,1),Array(1,0),Array(1,1)).map(v=> sigmoid(logit(gammas_check(0))-v(0)))
-         check_order =  all_switches.map(v=>(1 until kbar(0)).foldLeft(true){(s,i)=> s && ((sigmoid(logit(gammas_check(0)(i-1))+(betas(i-1) zip v).map(vv=>vv._1*vv._2.toDouble).sum)-(betas(i-1) zip gammas_check(1)).map(vvv=> vvv._1*vvv._2).sum)
-           < sigmoid(logit(gammas_check(0)(i))+(betas(i) zip v).map(vv=>vv._1*vv._2.toDouble).sum)-(betas(i) zip gammas_check(1)).map(vvv=> vvv._1*vvv._2).sum)}) contains false
-         if (!(check_order)){
-           betas = betas_old
-           lambdas = lambdas_old
-           pr_l = pr_l_old
-           println("false order")
-         }
-         else if(math.log(nextDouble)>prob.toDouble+
-           //(lambdas.map(v=>prior_lamb_new.logPdf(v)).sum-lambdas_old.map(v=>prior_lamb_new.logPdf(v)).sum) //marginal_new+
-           (lambdas.map(v=>prior_lamb.logPdf(v)).sum-lambdas_old.map(v=>prior_lamb.logPdf(v)).sum) //+
-           //math.log(pr_l)-math.log(pr_l_old)+
-                                 //lambdas.map(v=>math.log(v)).sum-lambdas_old.map(v=>math.log(v)).sum
-                                 //-
-                                 //marginal
-                                     ){
-           //if(j == kbar(0)){println(Array(eps,eps_old,prob.toDouble).mkString("\n"))}
-           betas = betas_old
-           lambdas = lambdas_old
-           pr_l = pr_l_old
-           //eps = eps_old
-         }
-         betas_old = betas
-         lambdas_old = lambdas
-         pr_l_old = pr_l
-         prior_lamb = new Exponential(pr_l)
-         //eps_old = eps
-         pos_dist = forward(data,m0,gamma_1,b,sig,kbar,betas,rho,eps,sc)
-         //marginal = pos_dist.values.reduce((x,y) => math.max(x,y)+math.log(math.exp(x-math.max(x,y))+math.exp(y-math.max(x,y))))
+        //Array(Array(0,0),Array(0,1),Array(1,0),Array(1,1)).map(v=> sigmoid(logit(gammas_check(0))-v(0)))
+        check_order =  all_switches.map(v=>(1 until kbar(0)).foldLeft(true){(s,i)=> s && ((sigmoid(logit(gammas_check(0)(i-1))+(betas(i-1) zip v).map(vv=>vv._1*vv._2.toDouble).sum)-(betas(i-1) zip gammas_check(1)).map(vvv=> vvv._1*vvv._2).sum)
+          < sigmoid(logit(gammas_check(0)(i))+(betas(i) zip v).map(vv=>vv._1*vv._2.toDouble).sum)-(betas(i) zip gammas_check(1)).map(vvv=> vvv._1*vvv._2).sum)}) contains false
+        if (!(check_order)){
+          betas = betas_old
+          lambdas = lambdas_old
+          pr_l = pr_l_old
+          println("false order")
+        }
+        else if(math.log(nextDouble)>prob.toDouble+
+          //(lambdas.map(v=>prior_lamb_new.logPdf(v)).sum-lambdas_old.map(v=>prior_lamb_new.logPdf(v)).sum)- //marginal_new+
+          (lambdas.map(v=>prior_lamb.logPdf(v)).sum-lambdas_old.map(v=>prior_lamb.logPdf(v)).sum)+ //+
+          //math.log(pr_l)-math.log(pr_l_old)//+
+          lambdas.map(v=>math.log(v)).sum-lambdas_old.map(v=>math.log(v)).sum
+        //-
+        //marginal
+        ){
+          //if(j == kbar(0)){println(Array(eps,eps_old,prob.toDouble).mkString("\n"))}
+          betas = betas_old
+          lambdas = lambdas_old
+          //pr_l = pr_l_old
+          //eps = eps_old
+        }
+        betas_old = betas
+        lambdas_old = lambdas
+        //pr_l_old = pr_l
+        //prior_lamb = new Exponential(pr_l)
+        //eps_old = eps
+        pos_dist = forward(data,m0,gamma_1,b,sig,kbar,betas,rho,eps,sc)
+        //marginal = pos_dist.values.reduce((x,y) => math.max(x,y)+math.log(math.exp(x-math.max(x,y))+math.exp(y-math.max(x,y))))
       }
       println(s"+++++++++++++++++++++++++++++ ${i}++++++++++++++++++++++++++")
-      val pw_lamb = new PrintWriter(new FileWriter("lamb_2_2.txt", true))
+      val pw_lamb = new PrintWriter(new FileWriter("lamb_2_3.txt", true))
       pw_lamb.write(lambdas.map(v=>v.toString).mkString(" "))
       pw_lamb.write(" ")
       pw_lamb.write(pr_l.toString)
@@ -165,10 +162,10 @@ object pos {
       gamma_1_p = gamma_1.map(v=>Uniform(v-delta_g,v+delta_g).sample(1)(0))
       gamma_1 = gamma_1_p.map(v=> if(v<0.0) -v else if (v>1.0) 2.0-v else v)
 
-      b_p = b.map(v=>Uniform(v-delta_b,v+delta_b).sample(1)(0))
-      b = b_p.map(v=> if(v<1.0) 2.0-v else v)
-      //b_p =  b.map(v=> math.exp(Gaussian(math.log(v),delta_b).sample(1)(0)))
-      //b = b_p
+      //b_p = b.map(v=>Uniform(v-delta_b,v+delta_b).sample(1)(0))
+      //b = b_p.map(v=> if(v<1.0) 2.0-v else v)
+      b_p =  b.map(v=> math.exp(Gaussian(math.log(v),delta_b).sample(1)(0)))
+      b = b_p
 
 
       //sig_p = sig.map(v=>Uniform(v-delta_s,v+delta_s).sample(1)(0))
@@ -194,22 +191,22 @@ object pos {
         //sig = sig_old
         //rho  = rho_old
       }else if(math.log(nextDouble)>prob.toDouble+ //marginal_new+
-                              b.map(v=>prior_b.logPdf(v)).sum+
-                              gamma_1.map(v=>prior_g1.logPdf(v)).sum- //+
-                              //b.map(v=>math.log(v)).sum-b_old.map(v=>math.log(v)).sum-
-                              //sig.map(v=>prior_sig.logPdf(v)).sum+
-                              //sig.map(v=>math.log(v)).sum-sig_old.map(v=>math.log(v)).sum-
-                              b_old.map(v=>prior_b.logPdf(v)).sum -
-                              gamma_1_old.map(v=>prior_g1.logPdf(v)).sum//-
-                              //sig_old.map(v=>prior_sig.logPdf(v)).sum  //-
-                              //marginal
-                              ){
+        b.map(v=>prior_b.logPdf(v)).sum+
+        gamma_1.map(v=>prior_g1.logPdf(v)).sum+
+        b.map(v=>math.log(v)).sum-b_old.map(v=>math.log(v)).sum-
+        //sig.map(v=>prior_sig.logPdf(v)).sum+
+        //sig.map(v=>math.log(v)).sum-sig_old.map(v=>math.log(v)).sum-
+        b_old.map(v=>prior_b.logPdf(v)).sum -
+        gamma_1_old.map(v=>prior_g1.logPdf(v)).sum//-
+      //sig_old.map(v=>prior_sig.logPdf(v)).sum  //-
+      //marginal
+      ){
         println(Array(m0,gamma_1,b,sig,rho).deep.mkString("\n"))
-          m0 = m0_old
-          gamma_1 = gamma_1_old
-          b = b_old
-          //sig = sig_old
-          //rho  = rho_old
+        m0 = m0_old
+        gamma_1 = gamma_1_old
+        b = b_old
+        //sig = sig_old
+        //rho  = rho_old
       }//else{marginal = marginal_new}
       m0_old = m0
       gamma_1_old = gamma_1
@@ -234,12 +231,12 @@ object pos {
         //b.map(v=>prior_b.logPdf(v)).sum+
         //gamma_1.map(v=>prior_g1.logPdf(v)).sum+
         //b.map(v=>math.log(v)).sum-b_old.map(v=>math.log(v)).sum+
-       // prior_r.logPdf(math.abs(rho))+
+        // prior_r.logPdf(math.abs(rho))+
         sig.map(v=>prior_sig.logPdf(v)).sum-
         //sig.map(v=>math.log(v)).sum-sig_old.map(v=>math.log(v)).sum-
         //b_old.map(v=>prior_b.logPdf(v)).sum -
         //gamma_1_old.map(v=>prior_g1.logPdf(v)).sum-
-       // prior_r.logPdf(math.abs(rho_old))-
+        // prior_r.logPdf(math.abs(rho_old))-
         sig_old.map(v=>prior_sig.logPdf(v)).sum  //-
       //marginal
       ){
@@ -260,7 +257,7 @@ object pos {
       gammas_check = (gamma_1 zip (0 until kbar.length)).map(v=> (0 until kbar(v._2)).map{vv=> if ((1-math.pow(1-v._1,math.pow(b(v._2),vv.toDouble)))>0.99999){0.99999}
       else if ((1-math.pow(1-v._1,math.pow(b(v._2),vv.toDouble)))<0.00001){0.00001}else{1-math.pow(1-v._1,math.pow(b(v._2),vv.toDouble))}})
 
-      val pw_rest = new PrintWriter(new FileWriter("rest_2_2.txt", true))
+      val pw_rest = new PrintWriter(new FileWriter("rest_2_3.txt", true))
       pw_rest.write(m0.map(v=>v.toString).mkString(" "))
       pw_rest.write(" ")
       pw_rest.write(gamma_1.map(v=>v.toString).mkString(" "))
@@ -310,8 +307,8 @@ object pos {
   }
 
   def one_step_new(Mt:scala.collection.immutable.Map[(String, String),Double],state: IndexedSeq[List[String]],kbar: Array[Int],
-               m0: Array[Double],rho:Double,sig: Array[Double], gamma_1: Array[Double],b:Array[Double],
-               beta:Array[Array[Double]],eps:Double,data:Array[Double],sc:SparkContext) :scala.collection.immutable.Map[(String, String),Double]={
+                   m0: Array[Double],rho:Double,sig: Array[Double], gamma_1: Array[Double],b:Array[Double],
+                   beta:Array[Array[Double]],eps:Double,data:Array[Double],sc:SparkContext) :scala.collection.immutable.Map[(String, String),Double]={
 
     // Turn all possible states in string specification into vector int specification: "1101"->Array(1,1,0,1)
     val states_vec = sc.parallelize(Mt.toList.map(v => List((v._1._1.substring(8-kbar(0),8).split("").map(_.toInt),v._1._2.substring(8-kbar(1),8).split("").map(_.toInt)))))
@@ -366,8 +363,8 @@ object pos {
 
     // From gamma_1, b and kbar, construct array of gammas
     val gammas = (gamma_1 zip (0 until kbar.length)).map(v=> (0 until kbar(v._2)).map{vv=> if ((1-math.pow(1-v._1,math.pow(b(v._2),vv.toDouble)))>0.99999){0.99999}
-                                                                                          else if ((1-math.pow(1-v._1,math.pow(b(v._2),vv.toDouble)))<0.00001){0.00001}
-                                                                                          else{1-math.pow(1-v._1,math.pow(b(v._2),vv.toDouble))}})
+    else if ((1-math.pow(1-v._1,math.pow(b(v._2),vv.toDouble)))<0.00001){0.00001}
+    else{1-math.pow(1-v._1,math.pow(b(v._2),vv.toDouble))}})
     // All possible states <=> all possible switches. Record the position where switches happened.
     val switched_indexes = state.map(x => x.map(y => y.toCharArray.zipWithIndex.filter(z => z._1.toString == "1").map(v => v._2)))
 
