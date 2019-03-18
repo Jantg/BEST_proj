@@ -4,7 +4,7 @@
 
 This image explains the structure of our model.
 
-![](Bayesian_Bivariate_MSM_fig.pdf)
+![](Bayesian_Bivariate_MSM_fig.png)
 
 Imagine it as probabilistic equivalent of Fourier decomposition where decomposed Markow Switching processes are conditionally dependent across series.
 
